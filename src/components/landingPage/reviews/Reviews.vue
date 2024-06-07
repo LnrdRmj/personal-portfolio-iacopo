@@ -3,7 +3,7 @@ import { useTranslation } from 'i18next-vue';
 import Client from './Client.vue';
 import Review from './Review.vue';
 
-import { ref } from 'vue';
+import { onUnmounted, ref } from 'vue';
 const { i18next } = useTranslation();
 
 type Review = {
@@ -19,8 +19,6 @@ const reviews = ref(getReviews())
 // Unfortunatelly when we change the languages we also have to "recalculate" the works
 i18next.on("languageChanged", () => {
     reviews.value = getReviews()
-    console.log('reviews updated');
-    
 });
 
 function getReviews(): Review[] {
@@ -66,18 +64,25 @@ function getReviews(): Review[] {
 const selectedReviewIndex = ref(0);
 const animationDuration = '.5s'
 
+const interval = setInterval(() => {
+    selectedReviewIndex.value = (selectedReviewIndex.value + 1) % getReviews().length
+}, 4 * 1000)
+
+onUnmounted(() => {
+    clearInterval(interval)
+})
+
 </script>
 
 <template>
     <div class="flex flex-col bg-secondary rounded-[20px] px-16">
         <div class="w-full bg-zinc-800 h-[2px] shrink-0 mt-[50px] mb-4"/>
-        <div class="text-3xl text-white font-semibold mb-10">
+        <div class="uppercase font-normal text-2xl mb-[80px] text-white">
             COSA DICONO I MIEI CLIENTI
         </div>
         <div class="flex h-[650px] space-x-5">
             <div class="flex flex-col space-y-2">
                 <Client v-for="(review, index) of reviews"
-                    :class="{ 'bg-red-500': index === selectedReviewIndex }"
                     @click="selectedReviewIndex = index"
                     :clientName="review.companyName"
                     :imageSrc="review.logo"
