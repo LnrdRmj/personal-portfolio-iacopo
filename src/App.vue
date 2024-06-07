@@ -111,7 +111,7 @@ function getWorks() {
         </div>
         <div class="flex flex-col px-72 my-52">
             <div class="max-w-full bg-gray-400 h-[2px] shrink-0 mb-5"/>
-            <div class="uppercase text-2xl mb-16">{{  $t('contactsSection.title') }}</div>
+            <div class="uppercase text-2xl font-semibold mb-16">{{  $t('contactsSection.title') }}</div>
             <div class="flex flex-col">
                 <div class="text-6xl font-semibold">
                     {{ $t('contactMe') }}

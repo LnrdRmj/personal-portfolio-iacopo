@@ -10,7 +10,7 @@ import ServiceCard from './ServiceCard.vue';
 <template>
     <div class="flex flex-col rounded-[20px] px-16 pt-[120px] pb-24 bg-secondary w-full text-white">
         <div class="w-full bg-zinc-800 h-[2px] shrink-0 mb-5"/>
-        <div class="uppercase font-normal text-2xl mb-[80px]">{{ $t('services.title') }}</div>
+        <div class="uppercase text-2xl font-semibold mb-[80px]">{{ $t('services.title') }}</div>
         <div class="flex space-x-10 w-full [&>*]:h-[700px]">
             <ServiceCard class="flex-1" 
                 :description="$t('services.service1.description')"
