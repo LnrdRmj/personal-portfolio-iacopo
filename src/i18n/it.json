@@ -19,24 +19,24 @@
             "description": "Progetto Start-up di un'Applicazione, Studio di una Brand Identity adeguata al Target e Realizzazione di Materiale Pubblicitario e Social."
         },
         "work2": {
-            "client": "Yoomy",
-            "role": "CO-OWNER / CREATIVE DIRECTOR",
-            "description": "Progettazione e Prototipazione completa del Sito Web su Figma, Studio di una nuova Brand Identity e Realizzazione di un Foto-Prodotto e Google Ads."
+            "client": "NATURAE FIRENZE",
+            "role": "GRAPHIC DESIGNER",
+            "description": "Rebranding aziendale che comprende la creazione di Palette colori, strategia Social Network e linea di Merchandising."
         },
         "work3": {
-            "client": "Yoomy",
-            "role": "CO-OWNER / CREATIVE DIRECTOR",
+            "client": "VORICEL",
+            "role": "WEB DESIGNER ",
             "description": "Progettazione e Prototipazione completa del Sito Web su Figma, Studio di una nuova Brand Identity e Realizzazione di un Foto-Prodotto e Google Ads."
         },
         "work4": {
-            "client": "Yoomy",
-            "role": "CO-OWNER / CREATIVE DIRECTOR",
-            "description": "Rebranding aziendale che comprende la creazione di Palette colori, strategia Social Network e linea di Merchandising."
+            "client": "SOFTKEYS",
+            "role": "GRAPHIC DESIGNER ",
+            "description": "Set di Modellazione 3D per Foto-Prodotto e Realizzazione di Google Ads."
         },
         "work5": {
-            "client": "Yoomy",
-            "role": "CO-OWNER / CREATIVE DIRECTOR",
-            "description": "Rebranding aziendale che comprende la creazione di Palette colori, strategia Social Network e linea di Merchandising."
+            "client": "I'RE",
+            "role": "VISUAL DESIGNER",
+            "description": "Studio di una Brand Identity conforme all'azienda con Logo, Palette Colori e Merchandising."
         }
     },
     "services": {
